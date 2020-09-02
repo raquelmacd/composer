@@ -29,7 +29,8 @@ switch ($opcao){
     case '2':
         $input = $climate->input('Digite um número: ');
         $resp = $input->prompt();
-        $climate->br();
+        $menu->fatorial($resp);
+        $climate->border('-',30);
         return;
     case '3':
         $input = $climate->input('Digite um número: ');
@@ -44,4 +45,3 @@ switch ($opcao){
         $climate->border('-',30);
         return;
     }
-    
